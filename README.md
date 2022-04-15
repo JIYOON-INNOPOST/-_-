@@ -12,3 +12,8 @@
     - 사용 데이터: AI Hub 얼굴 데이터, 구글 검색을 활용한 랜덤 풍경 이미지
     - 참고 코드: https://data-flair.training/blogs/python-remove-image-background/
     - MediaPipe 제공 코드로 거의 완벽하게 사람 부분만 Segment해 주는 것을 확인하였음. 이를 활용하여 학습 데이터에 배경을 랜덤하게 삽입할 예정.
+  - downloadBackgroundImg.ipynb
+    - Selenium을 이용해 랜덤 배경을 N개 확보한 후, 해당 배경 중 랜덤으로 AI Hub 인물 이미지에 합성시켜서 학습용 데이터셋을 만들어 주는 코드.
+    - 사용 데이터: pixel 사이트에서 풍경 사진 검색, AI Hub 얼굴 데이터
+    - 참고 코드: https://youtu.be/ZylRBW6tL-I
+    - class Name은 작동이 안 돼서 XPath로 이미지 src에 접근했으며, BGR RGB가 자꾸 반대로 출력돼서 좀 코드가 이상함.. 몇번이고 바꾸고있음..
